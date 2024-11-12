@@ -54,7 +54,7 @@ public class RR {
 
         // Print the Process Information Table
         System.out.println("--------------------------------------------------------------------------------");
-        System.out.println("Process\t Burst Time\t Turnaround Time\t Waiting Time");
+        System.out.println("Process\t Burst Time\t Waiting Time\t Turnaround Time");
         System.out.println("--------------------------------------------------------------------------------");
 
         // Calculate waiting time and print results
@@ -62,7 +62,7 @@ public class RR {
             wt[i] = tat[i] - bt[i];
             awt += wt[i];
             atat += tat[i];
-            System.out.printf("P%d\t %d\t\t %d\t\t %d\n", i + 1, bt[i], tat[i], wt[i]);
+            System.out.printf("P%d\t %d\t\t %d\t\t %d\n", i + 1, bt[i], wt[i], tat[i]); 
         }
 
         // Calculate averages
